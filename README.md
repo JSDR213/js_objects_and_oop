@@ -320,7 +320,7 @@ const car = {
     this.color = newColor;
   },
 };
-
+ ```
 
 Even though we're technically using objects to organize our code, we can see a noticeable amount of duplication. Just imagine if we needed a hundred cars in our app! Our code would certainly not be considered "DRY".
 
@@ -405,18 +405,18 @@ that they are classes. This isn't necessary, but is a convention you should foll
 class Person {
   // We use the constructor method to initialize properties for a class instance.
   // It takes whatever arguments we want to pass into an instance.
-  constructor(initialName) {
-    this.name = initialName;
-    this.species = 'Homo Sapiens';
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
   }
   // We define any methods accessible to an instance outside of the constructor
   speak(){
-    return `Hello! I’m ${this.name} and I am a ${this.species}`;
+    return `Hello! I’m ${this.name} and I am ${this.age} years olf`;
   }
 }
 
-const jeremy = new Person('Jeremy');
-andy.speak(); // "Hello, I'm Jeremy"
+const jeremy = new Person('Jeremy', 36);
+jeremy.speak(); // "Hello, I'm Jeremy and I am 36 years old"
 ```
 
 
