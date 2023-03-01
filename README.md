@@ -93,7 +93,7 @@ const carColor = car.color
 
 We also can have functions attached to our Objects, which are referred to as "Methods"
 
-`js
+```js
 
 const car = {
 make: "Ferrari",
@@ -109,6 +109,19 @@ Which can be accessed by simply calling them as :
 
 ```
 car.drive()
+```
+
+And, we can create new variables to reassign existing values in our objects!
+
+```js
+
+const carColor = car.color
+
+const carMileage = car.mileage
+
+(this is a poorly named variable, but you get the idea!
+const carMileageWithAFlatTire = (carMileage / 2)
+
 ```
 
 ## DIFFERENCES BETWEEN ARRAYS AND OBJECTS
